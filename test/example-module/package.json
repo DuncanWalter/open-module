@@ -1,0 +1,11 @@
+{
+  "name": "example-package",
+  "version": "1.0.0",
+  "description": "a fake package for testing open-module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT"
+}
