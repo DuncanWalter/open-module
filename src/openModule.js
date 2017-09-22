@@ -1,11 +1,11 @@
 
 import path from 'path'
 import minimist from 'minimist'
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 
 
-let __module__ = Symbol('module');
+const __module__ = Symbol('module');
 
 function extend(base, template){
     switch( true ){
