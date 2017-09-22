@@ -3,7 +3,7 @@ import path from 'path'
 import minimist from 'minimist'
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
-
+const webpack = require('webpack');
 
 const __module__ = Symbol('module');
 

@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("minimist"), require("html-webpack-plugin"), require("friendly-errors-webpack-plugin"));
+		module.exports = factory(require("minimist"), require("html-webpack-plugin"), require("friendly-errors-webpack-plugin"), require("webpack"));
 	else if(typeof define === 'function' && define.amd)
-		define(["minimist", "html-webpack-plugin", "friendly-errors-webpack-plugin"], factory);
+		define(["minimist", "html-webpack-plugin", "friendly-errors-webpack-plugin", "webpack"], factory);
 	else if(typeof exports === 'object')
-		exports["open-module/openModule"] = factory(require("minimist"), require("html-webpack-plugin"), require("friendly-errors-webpack-plugin"));
+		exports["open-module/openModule"] = factory(require("minimist"), require("html-webpack-plugin"), require("friendly-errors-webpack-plugin"), require("webpack"));
 	else
-		root["open-module/openModule"] = factory(root["minimist"], root["html-webpack-plugin"], root["friendly-errors-webpack-plugin"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_6__) {
+		root["open-module/openModule"] = factory(root["minimist"], root["html-webpack-plugin"], root["friendly-errors-webpack-plugin"], root["webpack"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_4__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_6__, __WEBPACK_EXTERNAL_MODULE_7__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -300,7 +300,8 @@ var _minimist2 = _interopRequireDefault(_minimist);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const HtmlWebpackPlugin = __webpack_require__(5);
-const FriendlyErrorsPlugin = __webpack_require_(_6);
+const FriendlyErrorsPlugin = __webpack_require__(6);
+const webpack = __webpack_require__(7);
 
 const __module__ = Symbol('module');
 
@@ -710,13 +711,19 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_6__;
 /* 7 */
 /***/ (function(module, exports) {
 
+module.exports = __WEBPACK_EXTERNAL_MODULE_7__;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
 function webpackEmptyContext(req) {
 	throw new Error("Cannot find module '" + req + "'.");
 }
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 7;
+webpackEmptyContext.id = 8;
 
 /***/ })
 /******/ ]);

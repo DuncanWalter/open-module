@@ -46,6 +46,7 @@ const base1 = {
     }, {
         'html-webpack-plugin': 'html-webpack-plugin',
         'friendly-errors-webpack-plugin': 'friendly-errors-webpack-plugin',
+        'webpack': 'webpack',
     }),
 };
 
@@ -93,6 +94,7 @@ const base2 = {
     }, {
         'html-webpack-plugin': 'html-webpack-plugin',
         'friendly-errors-webpack-plugin': 'friendly-errors-webpack-plugin',
+        'webpack': 'webpack',
     }),
 };
 
