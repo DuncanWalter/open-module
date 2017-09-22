@@ -43,6 +43,9 @@ const base1 = {
         // in a node environment for accurate code coverage reporting.
         a[d] = d;
         return a;
+    }, {
+        'html-webpack-plugin': 'html-webpack-plugin',
+        'friendly-errors-webpack-plugin': 'friendly-errors-webpack-plugin',
     }),
 };
 
